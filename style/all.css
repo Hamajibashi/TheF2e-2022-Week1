@@ -16210,6 +16210,44 @@ header .header-btn:hover {
 .event-detail .card-main img {
   flex: 1;
 }
+.event-detail .card-pc {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .event-detail .card-pc {
+    display: block;
+  }
+}
+.event-detail .card-rwd {
+  font-size: 9px;
+}
+@media (min-width: 1200px) {
+  .event-detail .card-rwd {
+    display: none;
+  }
+}
+.event-detail .card-rwd h4, .event-detail .card-rwd .h4 {
+  font-size: 9px;
+}
+.event-detail .card-rwd .bg-white {
+  font-size: 6px;
+}
+.event-detail .timetable {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .event-detail .timetable {
+    width: 710px;
+  }
+}
+.event-detail .timetable .box {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .event-detail .timetable .box {
+    height: 218px;
+  }
+}
 
 .process h3, .process .h3 {
   font-size: 24px;

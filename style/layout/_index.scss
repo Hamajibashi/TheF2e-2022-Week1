@@ -202,6 +202,36 @@ header {
             flex: 1;
         }
     }
+    .card-pc{
+        display: none;
+        @include pc{
+            display: block;
+        }
+    }
+    .card-rwd{
+        @include pc{
+            display: none;    
+        }
+        h4{
+            font-size: 9px;
+        }
+        font-size: 9px;
+        .bg-white{
+            font-size: 6px;
+        }
+    }
+    .timetable{
+        width: 100%;
+        @include pc{
+            width: 710px;
+        }
+        .box{
+            width: 100%;
+            @include pc{
+                height: 218px;
+            }
+        }
+    }
 }
 
 // 挑戰流程
