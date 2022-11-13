@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The F2E - 互動式網頁設計</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./style/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 表頭 -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-light bg-white py-5 py-xl-9 px-7">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="mb-0 fs-4">
+          <a class="text-dark text-decoration-none font-audiowide" href="index.html">The F2E</a>
+        </h1>
+        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="material-icons text-dark">
+            drag_handle
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb- mb-xl-0 fs-9 fw-bolder text-center d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link p-0 me-xl-8 my-8 my-xl-0 d-block" aria-current="page" href="index.html">關卡資訊</a>
+            </li>
+            <li class="nav-item">
+              <img src="./images/nav_star.svg" alt="" class="mb-8 mb-xl-0">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 mx-xl-8 mb-8 mb-xl-0 d-block" href="#">攻略資源</a>
+            </li>
+            <li class="nav-item">
+              <img src="./images/nav_star.svg" alt="" class="mb-8 mb-xl-0">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center justify-content-center p-0 ms-xl-8 me-xl-11 mb-11 mb-xl-0 d-block"
+                href="#">
+                求職專區
+              </a>
+            </li>
+            <li class="d-flex">
+              <a class="py-3 px-xl-7 px-11 me-4 d-block text-decoration-none text-dark border border-dark btn-join header-btn"
+                href="#">註冊報名</a>
+              <a class="py-3 px-xl-7 px-11 d-block text-decoration-none text-dark border border-dark header-btn"
+                href="#">登入</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- banner -->
+    <!-- <section class="banner bg-dark pt-7 pt-md-11 pt-xl-14">
+      <div class="container">
+        <div class="d-flex position-relative top">
+          <img src="./images/KV-1.svg" alt="" class="circle">
+          <img src="./images/KV-6.svg" alt="" class=" theF2E">
+          <img src="./images/KV-2.svg" alt="" class="position-absolute eye">
+        </div>
+        <div class="d-flex center">
+          <img src="./images/KV-7.svg" alt="">
+          <div class="d-flex flex-column justify-content-between">
+            <ul class="list-unstyled d-flex text-white">
+              <li class="fw-bolder">互動式</li>
+              <li>|</li>
+              <li class="fw-bolder">網頁設計</li>
+            </ul>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex star">
+                <img src="./images/KV-4.svg" alt="">
+                <img src="./images/KV-5.svg" alt="">
+              </div>
+              <div class="d-flex justify-content-center hexschool">
+                <h3 class="text-white mb-0">HexSchool</h3>
+              </div>
+            </div>
+          </div>
+          <img src="./images/KV-3.svg" alt="">
+        </div>
+      </div>
+    </section> -->
+    <!-- 你是否也有以下困擾？ -->
+    <section class="problems bg-dark py-13 py-xl-15">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center">
+          <h3 class="position-relative mb-13 mb-xl-15">你是否也有以下困擾？</h3>
+        </div>
+        <div class="row flex-column flex-md-row justify-content-center align-items-center mb-14 mb-xl-16">
+          <div class="col-md-5 d-flex justify-content-center align-items-center">
+            <img src="./images/image-painpoint-1.svg" alt="示意圖" class="img-fluid">
+          </div>
+          <div class="col-md-5 d-flex justify-content-center align-items-center">
+            <ul class="list-unstyled text-secondary fw-bold">
+              <li>羨慕別人的</li>
+              <li>酷酷網頁動畫？</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row flex-column flex-md-row-reverse justify-content-center align-items-center mb-14 mb-xl-16">
+          <div class="col-md-5 d-flex justify-content-center align-items-center">
+            <img src="./images/image-painpoint-2.svg" alt="示意圖" class="img-fluid">
+          </div>
+          <div class="col-md-5 d-flex justify-content-center align-items-center">
+            <ul class="list-unstyled text-secondary fw-bold">
+              <li>滿足不了</li>
+              <li>同事的許願？</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row flex-column flex-md-row justify-content-center align-items-center">
+          <div class="col-md-5 d-flex justify-content-center align-items-center">
+            <img src="./images/image-painpoint-3.svg" alt="示意圖" class="img-fluid">
+          </div>
+          <div class="col-md-5 d-flex justify-content-center align-items-center">
+            <ul class="list-unstyled text-secondary fw-bold">
+              <li>動畫技能樹太雜</li>
+              <li>無從下手？</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- together we can go far -->
+    <section class="together bg-primary py-13 py-xl-15">
+      <div class="container d-flex flex-column align-items-center position-relative">
+        <h3 class="font-archivo-black text-white text-center mb-9 mb-xl-13">TOGETHER<br>WE CAN<br>GO FAR</h3>
+        <ul class="list-unstyled fw-bold d-flex">
+          <li>UI 設計師</li>
+          <li class="mx-10">X</li>
+          <li>前端工程師</li>
+        </ul>
+        <img src="./images/image-solution-inside.svg" alt="合作示意圖" class="img-fluid inside">
+        <img src="./images/image-solution-outside.svg" alt="合作示意圖" class="img-fluid">
+      </div>
+    </section>
+    <!-- 年度最強合作 三大主題來襲 -->
+    <section class="three-topics bg-secondary py-18 py-xl-15"></section>
+    <!-- 活動說明 -->
+    <section class="event-detail bg-dark py-18 py-xl-15">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h3 class="position-relative mb-13 mb-xl-17">活動說明</h3>
+          <ul class="memo-list list-unstyled d-flex flex-column flex-xl-row">
+            <li class="border border-white">
+              <div class="card-top bg-primary py-4 px-auto d-flex align-items-center justify-content-center">
+                <img src="./images/報名時間-image.svg" alt="" class="img-fluid me-xl-5">
+                <h4 class="text-white fw-bolder mb-0">報名時間</h4>
+              </div>
+              <div class="card-main d-flex">
+                <div class="card-side bg-dark py-auto px-4">
+                  <p class="m-0 fw-bolder text-center">Registration</p>
+                </div>
+                <div class="position-relative">
+                  <ul class="memo position-absolute fw-bold fs-9">
+                    <li>10/13 ~ 10/30</li>
+                    <li>截止前可修改報名組別</li>
+                  </ul>
+                  <img src="./images/square.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </li>
+            <li class="border border-white">
+              <div class="card-top bg-primary py-4 px-auto d-flex align-items-center justify-content-center">
+                <img src="./images/登陸作品-image.svg" alt="" class="img-fluid me-xl-5">
+                <h4 class="text-white fw-bolder mb-0">登錄作品</h4>
+              </div>
+              <div class="card-main d-flex">
+                <div class="card-side bg-dark py-auto px-4">
+                  <p class="m-0 fw-bolder text-center">Uploading</p>
+                </div>
+                <div class="position-relative">
+                  <ul class="memo position-absolute fw-bold fs-9">
+                    <li>依賽程登錄作品</li>
+                    <li>10/31(一) UI、團體組開賽</li>
+                    <li>11/7(一) 前端組開賽</li>
+                  </ul>
+                  <img src="./images/square.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </li>
+            <li class="border border-white">
+              <div class="card-top bg-primary py-4 px-auto d-flex align-items-center justify-content-center">
+                <img src="./images/額外競賽-image.svg" alt="" class="img-fluid me-xl-5">
+                <h4 class="text-white fw-bolder mb-0">額外競賽</h4>
+              </div>
+              <div class="card-main d-flex">
+                <div class="card-side bg-dark py-auto px-4">
+                  <p class="m-0 fw-bolder text-center">Competition</p>
+                </div>
+                <div class="position-relative">
+                  <ul class="memo position-absolute fw-bold fs-9">
+                    <li>主題豐厚獎金等著你</li>
+                  </ul>
+                  <img src="./images/square.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- 挑戰流程 -->
+    <section class="process bg-secondary py-18 py-xl-15">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h3 class="position-relative mb-13 mb-xl-17">挑戰流程</h3>
+          <div class="process-list d-flex flex-column align-items-center">
+            <div
+              class="card bg-transparent d-flex justify-content-center justify-content-xl-between align-items-center align-items-xl-end flex-column flex-xl-row-reverse">
+              <p class="warning text-primary border border-white p-3">
+                每個挑戰主題提供<span class="fw-bolder"> 一週開發時間 </span><br>
+                未在<span class="fw-bolder"> 各週一中午 12:00 </span>前登錄作品者<br>
+                當週即為挑戰失敗！
+              </p>
+              <img src="./images/挑戰流程-image-1.svg" alt="" class="img-fluid mb-19 mb-xl-0">
+              <div class="card-body text-center text-xl-start d-flex flex-column justify-content-xl-between p-0">
+                <div>
+                  <h4 class="card-title text-white fw-bolder mb-5">每週一</h4>
+                  <h5 class="card-subtitle mb-2 text-white fw-bolder mb-7">中午 12:00</h5>
+                  <p class="action card-text text-primary fw-bolder mb-11">獲得新主題</p>
+                </div>
+                <div>
+                  <p class="challenger card-text text-white mb-4">挑戰人員</p>
+                  <a href="#" class="btn btn-outline-light me-3">UI 設計師</a>
+                  <a href="#" class="btn btn-outline-light">團體組</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card bg-transparent d-flex justify-content-center justify-content-xl-between align-items-center align-items-xl-end flex-column flex-xl-row-reverse">
+              <p class="warning text-primary border border-white p-3">
+                每個挑戰主題提供<span class="fw-bolder"> 一週開發時間 </span><br>
+                未在<span class="fw-bolder"> 各週一中午 12:00 </span>前登錄作品者<br>
+                當週即為挑戰失敗！
+              </p>
+              <img src="./images/挑戰流程-image-2.svg" alt="" class="img-fluid mb-19 mb-xl-0">
+              <div class="card-body text-center text-xl-start d-flex flex-column justify-content-xl-between p-0">
+                <div>
+                  <h4 class="card-title text-white fw-bolder mb-5">隔週一</h4>
+                  <h5 class="card-subtitle mb-2 text-white fw-bolder mb-7">中午 12:00</h5>
+                  <p class="action card-text text-primary fw-bolder mb-11">UI 組、團體組<br>
+                    登錄 UI 作品<br>
+                    前端組認領設計稿</p>
+                </div>
+                <div>
+                  <p class="challenger card-text text-white mb-4">挑戰人員</p>
+                  <a href="#" class="btn btn-outline-light me-3">UI 設計師</a>
+                  <a href="#" class="btn btn-outline-light me-3">前端工程師</a>
+                  <a href="#" class="btn btn-outline-light">團體組</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card bg-transparent d-flex justify-content-center justify-content-xl-between align-items-center align-items-xl-end flex-column flex-xl-row-reverse">
+              <p class="warning text-primary border border-white p-3">
+                每個挑戰主題提供<span class="fw-bolder"> 一週開發時間 </span><br>
+                未在<span class="fw-bolder"> 各週一中午 12:00 </span>前登錄作品者<br>
+                當週即為挑戰失敗！
+              </p>
+              <img src="./images/挑戰流程-image-3.svg" alt="" class="img-fluid mb-19 mb-xl-0">
+              <div class="card-body text-center text-xl-start d-flex flex-column justify-content-xl-between p-0">
+                <div>
+                  <h4 class="card-title text-white fw-bolder mb-5">再隔週一</h4>
+                  <h5 class="card-subtitle mb-2 text-white fw-bolder mb-7">中午 12:00</h5>
+                  <p class="action card-text text-primary fw-bolder mb-11">
+                    前端組、團體組<br>
+                    登錄作品
+                </div>
+                <div>
+                  <p class="challenger card-text text-white mb-4">挑戰人員</p>
+                  <a href="#" class="btn btn-outline-light me-3">前端工程師</a>
+                  <a href="#" class="btn btn-outline-light">團體組</a>
+                </div>
+              </div>
+            </div>
+            <p class="warning-last text-primary text-center border border-white p-3 mb-0">
+              每個挑戰主題提供<span class="fw-bolder"> 一週開發時間 </span><br>
+              未在<span class="fw-bolder"> 各週一中午 12:00 </span>前登錄作品者<br>
+              當週即為挑戰失敗！
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 還有比賽等著你！ -->
+    <section class="race-and-price bg-primary py-18 py-xl-15"></section>
+    <!-- 贊助單位 -->
+    <section class="sponsors bg-white py-18 py-md-15">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="d-flex align-items-end mb-17">
+            <img src="./images/贊助單位-Star.svg" alt="" class="img-fluid">
+            <h3 class="fw-bolder position-relative mx-2 px-3">贊助單位</h3>
+            <img src="./images/贊助單位-Star.svg" alt="" class="img-fluid">
+          </div>
+          <ul
+            class="list-unstyled d-flex flex-column flex-xl-row justify-content-xl-between justify-content-center align-items-center p-0 mb-0">
+            <li>
+              <img src="./images/贊助單位-logo-1.svg" alt="" class="img-fluid">
+            </li>
+            <li>
+              <img src="./images/贊助單位-logo-2.svg" alt="" class="img-fluid">
+            </li>
+            <li>
+              <img src="./images/贊助單位-logo-3.svg" alt="" class="img-fluid">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- 各界大神接力分享 -->
+    <section class="god-lessons bg-secondary py-18 py-xl-15">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h3 class="position-relative mb-13 mb-xl-17">各界大神接力分享</h3>
+          <ul class="lesson-list list-unstyled d-flex flex-column">
+            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17">
+              <img src="./images/大神分享-李明.svg" alt="講師照片" class="img-fluid">
+              <div class="event-detail d-flex flex-column">
+                <div class="bg-white p-7 d-flex flex-column justify-content-between">
+                  <p class="tag bg-secondary text-white mb-7">免費公開場</p>
+                  <div class="title-time">
+                    <h4 class="fw-bolder mb-5 mb-xl-8">網站的動態趨勢</h4>
+                    <h5 class="fw-bolder mb-0">11/3（四）20:00 ~ 21:30</h5>
+                  </div>
+                </div>
+                <div class="bg-dark">
+                  <ul class="list-unstyled">
+                    <li class="py-2 px-4 py-xl-4 px-xl-7">
+                      <img src="./images/Vector 8.svg" alt="箭頭" class="img-fluid me-2 me-xl-4">
+                      <span class="text-primary fw-bolder lecturer">
+                        李明
+                      </span>
+                    </li>
+                    <li class="text-white position py-2 px-4 py-xl-4 px-xl-7">版塊設計創辦人暨設計總監</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17">
+              <img src="./images/大神分享-Leo.svg" alt="講師照片" class="img-fluid">
+              <div class="event-detail d-flex flex-column">
+                <div class="bg-white p-7 d-flex flex-column justify-content-between">
+                  <p class="tag bg-secondary text-white mb-7">免費公開場</p>
+                  <div class="title-time">
+                    <h4 class="fw-bolder mb-5 mb-xl-8">jQuery 也可以<br>做到的互動效果</h4>
+                    <h5 class="fw-bolder mb-0">11/10（四）20:00 ~ 21:30</h5>
+                  </div>
+                </div>
+                <div class="bg-dark">
+                  <ul class="list-unstyled">
+                    <li class="py-2 px-4 py-xl-4 px-xl-7">
+                      <img src="./images/Vector 8.svg" alt="箭頭" class="img-fluid me-2 me-xl-4">
+                      <span class="text-primary fw-bolder lecturer">
+                        Leo
+                      </span>
+                    </li>
+                    <li class="text-white position py-2 px-4 py-xl-4 px-xl-7">Angular Taiwan 傳教士</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17">
+              <img src="./images/大神分享-邱繼緯.svg" alt="講師照片" class="img-fluid">
+              <div class="event-detail d-flex flex-column">
+                <div class="bg-white p-7 d-flex flex-column justify-content-between">
+                  <p class="tag bg-secondary text-white mb-7">免費公開場</p>
+                  <div class="title-time">
+                    <h4 class="long-title fw-bolder mb-5 mb-xl-8">做事不能拖拖拉拉，但網頁可以：<br>draggable.js 介紹</h4>
+                    <h5 class="fw-bolder mb-0">11/17（四）20:00 ~ 21:30</h5>
+                  </div>
+                </div>
+                <div class="bg-dark">
+                  <ul class="list-unstyled">
+                    <li class="py-2 px-4 py-xl-4 px-xl-7">
+                      <img src="./images/Vector 8.svg" alt="箭頭" class="img-fluid me-2 me-xl-4">
+                      <span class="text-primary fw-bolder lecturer">
+                        邱繼緯
+                      </span>
+                    </li>
+                    <li class="text-white position py-2 px-4 py-xl-4 px-xl-7">前端工程師</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center">
+              <img src="./images/大神分享-吳哲宇.svg" alt="講師照片" class="img-fluid">
+              <div class="event-detail d-flex flex-column">
+                <div class="bg-white p-7 d-flex flex-column justify-content-between">
+                  <p class="tag bg-secondary text-white mb-7">免費公開場</p>
+                  <div class="title-time">
+                    <h4 class="fw-bolder mb-5 mb-xl-8">互動式網頁設計工程師<br>該具備哪些技能？</h4>
+                    <h5 class="fw-bolder mb-0">11/17（四）20:00 ~ 21:30</h5>
+                  </div>
+                </div>
+                <div class="bg-dark">
+                  <ul class="list-unstyled">
+                    <li class="py-2 px-4 py-xl-4 px-xl-7">
+                      <img src="./images/Vector 8.svg" alt="箭頭" class="img-fluid me-2 me-xl-4">
+                      <span class="text-primary fw-bolder lecturer">
+                        吳哲宇
+                      </span>
+                    </li>
+                    <li class="text-white position py-2 px-4 py-xl-4 px-xl-7">墨雨互動設計 創辦人、生成式藝術家</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- 常見問題 -->
+    <section class="faqs bg-dark"></section>
+    <!-- 最強練功修煉合作 -->
+    <section class="final bg-dark py-md-14 py-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-11">
+            <div class="card p-0">
+              <div class="card-body p-0">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                  <img src="./images/final-CTA-image.svg" alt="" class="img-fluid mb-9 mb-md-0">
+                  <div class="d-flex flex-column flex-xl-row align-items-center px-md-10 px-xl-11">
+                    <div class="text-xl-start text-center me-xl-17 mb-7 mb-xl-0">
+                      <h4 class="ch fw-bolder mb-6">最強練功修煉合作</h4>
+                      <p class="en mb-0">together we can go far</p>
+                    </div>
+                    <img src="./images/Star_cta.svg" alt="" class="img-fluid me-xl-17 mb-7 mb-xl-0">
+                    <a
+                      class="d-block text-decoration-none fw-bolder border border-dark py-7 px-xl-12 px-11 mb-9 mb-md-0">
+                      註冊報名
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- 表尾 -->
+  <footer class="bg-dark text-white text-center py-12 mb-xl-13">
+    <ul class="list-unstyled d-flex justify-content-center flex-column flex-xl-row mb-0">
+      <li>Copyright © 2019 HexSchool.</li>
+      <li>All rights reserved.</li>
+    </ul>
+  </footer>
+</body>
+
+</html>

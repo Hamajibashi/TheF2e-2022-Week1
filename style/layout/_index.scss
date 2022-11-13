@@ -1,0 +1,468 @@
+body {
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+}
+
+.font-audiowide {
+    font-family: 'Audiowide', cursive;
+}
+
+.font-archivo-black {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+
+header {
+    .btn-join {
+        background-color: $primary;
+    }
+
+    .header-btn {
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+}
+
+.banner {
+    .circle {
+        max-width: 390px;
+    }
+
+    .theF2E {
+        max-width: 905.5px;
+    }
+
+    .eye {
+        bottom: -100px;
+        right: 0;
+    }
+
+    .center {
+        gap: 0;
+    }
+
+    ul {
+        border: 1.35px solid #fff;
+
+        @include pc {
+            font-size: 92px;
+        }
+
+        li:nth-child(3) {
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+
+        }
+    }
+
+    .star {
+        width: 30%;
+        border: 1.35px solid #fff;
+    }
+
+    .hexschool {
+        width: 70%;
+        padding: 11px 29px;
+        border: 1.35px solid #fff;
+        background-color: #1CC593;
+    }
+}
+
+.problems {
+    h3 {
+        font-size: 24px;
+
+        @include pad {
+            font-size: 48px;
+        }
+
+        @include hollow-font;
+    }
+
+    img {
+        width: 238px;
+
+        @include pc {
+            width: 462px;
+        }
+    }
+
+    .img-parts {
+        width: 52px;
+        top: 17%;
+        left: 41%;
+    }
+
+    ul {
+        font-size: 24px;
+        text-align: center;
+
+        @include pad {
+            font-size: 36px;
+            text-align: left;
+        }
+
+        @include pc {
+            font-size: 58px;
+            text-align: left;
+        }
+    }
+}
+
+.together {
+    h3 {
+        line-height: 100%;
+        font-size: 48px;
+
+        @include pad {
+            font-size: 72px;
+        }
+
+        @include pc {
+            font-size: 128px;
+        }
+    }
+
+    ul {
+        font-size: 24px;
+
+        @include pad {
+            font-size: 28px;
+        }
+
+        @include pc {
+            font-size: 48px;
+        }
+
+        li:nth-child(2) {
+            color: transparent;
+            -webkit-text-stroke: 1px #000;
+        }
+    }
+
+    .inside {
+        position: absolute;
+        bottom: 0;
+        transition: all 1s;
+        width: 150px;
+
+        @include pad {
+            width: 300px;
+        }
+
+        @include pc {
+            width: 530px;
+        }
+    }
+}
+
+// 活動說明
+.event-detail {
+    h3 {
+        font-size: 24px;
+
+        @include pad {
+            font-size: 48px;
+        }
+
+        @include hollow-font;
+    }
+
+    .memo-list {
+        gap: 24px;
+    }
+
+    .card-main {
+        .card-side {
+            -webkit-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+
+            p {
+                color: transparent;
+                -webkit-text-stroke: 1px #fff;
+                font-size: 16px;
+
+                @include pc {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .memo {
+            line-height: 2;
+            top: 40px;
+            left: 10px;
+        }
+
+        img {
+            flex: 1;
+        }
+    }
+}
+
+// 挑戰流程
+.process {
+    h3 {
+        font-size: 24px;
+
+        @include pad {
+            font-size: 48px;
+        }
+
+        @include hollow-font;
+    }
+
+    h4 {
+        font-size: 36px;
+
+        @include pc {
+            font-size: 72px;
+        }
+    }
+
+    h5 {
+        font-size: 18px;
+
+        @include pc {
+            font-size: 24px;
+        }
+    }
+
+    .warning {
+        display: none;
+        font-size: 16px;
+
+        @include pc {
+            display: block;
+            font-size: 18px;
+        }
+    }
+
+    .action {
+        font-size: 24px;
+
+        @include pc {
+            font-size: 32px;
+        }
+    }
+
+    .challenger {
+        font-size: 12px;
+
+        @include pc {
+            font-size: 18px;
+        }
+    }
+
+    a {
+        font-size: 14px;
+
+        @include pc {
+            font-size: 18px;
+        }
+    }
+
+    .process-list {
+        width: 100%;
+    }
+
+    .card {
+        border: none;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 78px;
+
+        @include pc {
+            margin-bottom: 140px;
+            gap: 60px;
+        }
+
+        .btn-outline-light {
+            border-radius: 100px;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+
+        .card-body {
+            @include pc {
+                height: 406px;
+            }
+        }
+    }
+
+    .warning-last {
+        width: fit-content;
+
+        @include pc {
+            display: none;
+        }
+    }
+}
+
+// 贊助單位
+.sponsors {
+    h3 {
+        z-index: 1;
+        width: fit-content;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            bottom: 0;
+            height: 14px;
+            width: 100%;
+            background-color: $primary;
+        }
+    }
+
+    ul {
+        @include pc {
+            gap: 135px;
+        }
+    }
+}
+
+// 各界大神接力分享
+.god-lessons {
+    h3 {
+        font-size: 24px;
+
+        @include pad {
+            font-size: 48px;
+        }
+
+        @include hollow-font;
+    }
+
+    .event-detail {
+        width: 335px;
+        height: auto;
+
+        @include pc {
+            width: 524px;
+            height: 312px;
+        }
+
+        .bg-white {
+            height: 100%;
+
+            @include pc {
+                border-top-right-radius: 100px;
+            }
+
+            .tag {
+                padding: 2px 10px;
+                width: fit-content;
+                font-size: 12px;
+
+                @include pc {
+                    font-size: 16px;
+                }
+            }
+
+            h4 {
+                letter-spacing: normal;
+                font-size: 20px;
+
+                @include pc {
+                    font-size: 32px;
+                }
+            }
+
+            .long-title {
+                font-size: 19px;
+
+                @include pc {
+                    font-size: 32px;
+                }
+            }
+
+            h5 {
+                font-size: 14px;
+
+                @include pc {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .bg-dark {
+            li {
+                border: 1px solid #fff;
+
+                @include pc {
+                    border: none;
+                    border-right: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            .lecturer {
+                font-size: 14px;
+
+                @include pc {
+                    font-size: 20px;
+                }
+            }
+
+            .position {
+                font-size: 12px;
+
+                @include pc {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.final {
+    .card {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    .ch {
+        font-size: 34px;
+
+        @include pc {
+            font-size: 36px;
+        }
+    }
+
+    .en {
+        font-size: 24px;
+
+        @include pc {
+            font-size: 32px;
+        }
+    }
+
+    a {
+        font-size: 30px;
+
+        @include pc {
+            font-size: 36px;
+        }
+
+        transition: all 0.3s;
+        border-radius: 0;
+        color: $dark;
+        background-color: $primary;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary;
+            background-color: $dark;
+        }
+    }
+}

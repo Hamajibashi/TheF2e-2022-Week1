@@ -1,0 +1,29 @@
+@mixin pc {
+    @media(min-width:1200px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media(min-width: 768px) {
+        @content;
+    }
+}
+
+// 鏤空標題
+@mixin hollow-font {
+    z-index: 1;
+    width: fit-content;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        height: 14px;
+        width: 100%;
+        background-color: $success;
+    }
+}

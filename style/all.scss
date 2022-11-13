@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Audiowide&family=Noto+Sans+TC:wght@500;700;900&display=swap');
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import './helpers/mixin.scss';
+@import './layout/index.scss';
