@@ -27,48 +27,54 @@ header {
 }
 
 .banner {
-    .circle {
-        max-width: 390px;
-    }
-
-    .theF2E {
-        max-width: 905.5px;
-    }
-
-    .eye {
-        bottom: -100px;
-        right: 0;
-    }
-
-    .center {
-        gap: 0;
-    }
-
-    ul {
-        border: 1.35px solid #fff;
-
-        @include pc {
-            font-size: 92px;
-        }
-
-        li:nth-child(3) {
-            color: transparent;
-            -webkit-text-stroke: 1px #fff;
-
+    .scroll{
+        display: none;
+        @include pc{
+            display: block;
         }
     }
+    // .circle {
+    //     max-width: 390px;
+    // }
 
-    .star {
-        width: 30%;
-        border: 1.35px solid #fff;
-    }
+    // .theF2E {
+    //     max-width: 905.5px;
+    // }
 
-    .hexschool {
-        width: 70%;
-        padding: 11px 29px;
-        border: 1.35px solid #fff;
-        background-color: #1CC593;
-    }
+    // .eye {
+    //     bottom: -100px;
+    //     right: 0;
+    // }
+
+    // .center {
+    //     gap: 0;
+    // }
+
+    // ul {
+    //     border: 1.35px solid #fff;
+
+    //     @include pc {
+    //         font-size: 92px;
+    //     }
+
+    //     li:nth-child(3) {
+    //         color: transparent;
+    //         -webkit-text-stroke: 1px #fff;
+
+    //     }
+    // }
+
+    // .star {
+    //     width: 30%;
+    //     border: 1.35px solid #fff;
+    // }
+
+    // .hexschool {
+    //     width: 70%;
+    //     padding: 11px 29px;
+    //     border: 1.35px solid #fff;
+    //     background-color: #1CC593;
+    // }
 }
 
 .problems {
@@ -202,32 +208,42 @@ header {
             flex: 1;
         }
     }
-    .card-pc{
+
+    .card-pc {
         display: none;
-        @include pc{
+
+        @include pc {
             display: block;
         }
     }
-    .card-rwd{
-        @include pc{
-            display: none;    
+
+    .card-rwd {
+        @include pc {
+            display: none;
         }
-        h4{
+
+        h4 {
             font-size: 9px;
         }
+
         font-size: 9px;
-        .bg-white{
+
+        .bg-white {
             font-size: 6px;
         }
     }
-    .timetable{
+
+    .timetable {
         width: 100%;
-        @include pc{
+
+        @include pc {
             width: 710px;
         }
-        .box{
+
+        .box {
             width: 100%;
-            @include pc{
+
+            @include pc {
                 height: 218px;
             }
         }
@@ -335,9 +351,134 @@ header {
     }
 }
 
+// 還有比賽等著你！
+.race-and-price {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    .loop {
+        position: absolute;
+        z-index:-1;
+        top: 190px;
+        display: inline-block;
+        font-size: 32px;
+        color: transparent;
+        white-space: nowrap;
+        height: 100%;
+        -webkit-text-stroke: 1px #fff;
+        span{
+            display: inline-block;
+        }
+        img{
+            width: 19px;
+            @include pc{
+                width: 49px;
+            }
+        }
+        @include pc{
+            font-size: 80px;
+            top: 210px;
+        }
+        li{
+            margin-bottom: 270px;
+            @include pc{
+                margin-bottom: 235px;
+            }
+        }
+      }
+    .not-enough {
+        font-size: 12px;
+
+        @include pc {
+            font-size: 24px;
+        }
+
+        opacity: 0.3;
+    }
+
+    h3 {
+        font-size: 24px;
+
+        @include pad {
+            font-size: 36px;
+        }
+
+        @include pc {
+            font-size: 48px;
+        }
+    }
+    h4{
+        font-size: 20px;
+        @include pc{
+            font-size: 36px;
+        }
+    }
+
+    .race-title {
+        font-size: 16px;
+
+        @include pc {
+            font-size: 24px;
+        }
+    }
+
+    .race-detail {
+        font-size: 14px;
+
+        @include pc {
+            font-size: 20px;
+        }
+    }
+    .price-list{
+        width: 335px;
+        @include pc{
+            width: 1091px;
+        }
+        li{
+            width: 239px;
+            @include pc{
+                width: calc(100%/3);
+            }
+        }
+    }
+
+    .price-card {
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        h5,h6{
+            font-size: 28px;
+            @include pc{
+                font-size: 46px;
+            }
+        }
+        h6{
+            letter-spacing: normal;
+        }
+        span{
+            font-size: 16px;
+            @include pc{
+                font-size: 26px;
+            }
+        }
+    }
+    .bg-success{
+        font-size: 20px;
+        @include pc{
+            font-size: 32px;
+        }
+    }
+}
+
 // 贊助單位
 .sponsors {
     h3 {
+        font-size: 24px;
+
+        @include pc {
+            font-size: 48px;
+        }
+
         z-index: 1;
         width: fit-content;
 
@@ -450,6 +591,39 @@ header {
                     font-size: 14px;
                 }
             }
+        }
+    }
+}
+
+// 常見問題
+.faqs{
+    h3{
+        font-size: 24px;
+        @include pc{
+            font-size: 48px;
+        }
+        @include hollow-font;
+    }
+    .faq-area{
+        z-index: 1;
+    }
+    .faq-man{
+        display: none;
+        @include pc{
+            display: block;
+            z-index: -1;
+            top: -25%;
+        }
+    }
+    .faq-pc{
+        display: none;
+        @include pc{
+            display: block;
+        }
+    }
+    .faq-rwd{
+        @include pc{
+            display: none;
         }
     }
 }
