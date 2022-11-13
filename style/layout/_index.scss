@@ -77,6 +77,7 @@ header {
     // }
 }
 
+// 困擾
 .problems {
     h3 {
         font-size: 24px;
@@ -118,6 +119,7 @@ header {
     }
 }
 
+// 合作
 .together {
     h3 {
         line-height: 100%;
@@ -161,6 +163,30 @@ header {
 
         @include pc {
             width: 530px;
+        }
+    }
+}
+
+// 三大主題
+.three-topics{
+    overflow: hidden;
+    h3{
+        font-size: 24px;
+        @include pad{
+            font-size: 48px;
+        }
+        @include hollow-font;
+    }
+    .subtitle{
+        opacity: 0.3;
+        font-size: 12px;
+        @include pad{
+            font-size: 24px;
+        }
+    }
+    ul{
+        @include pad{
+            transform: translateX(50%);
         }
     }
 }
@@ -628,6 +654,7 @@ header {
     }
 }
 
+// 註冊會員
 .final {
     .card {
         width: 100%;

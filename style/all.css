@@ -16852,6 +16852,47 @@ header .header-btn:hover {
   }
 }
 
+.three-topics {
+  overflow: hidden;
+}
+.three-topics h3, .three-topics .h3 {
+  font-size: 24px;
+  z-index: 1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+@media (min-width: 768px) {
+  .three-topics h3, .three-topics .h3 {
+    font-size: 48px;
+  }
+}
+.three-topics h3::before, .three-topics .h3::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  height: 14px;
+  width: 100%;
+  background-color: #2938EA;
+}
+.three-topics .subtitle {
+  opacity: 0.3;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .three-topics .subtitle {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .three-topics ul {
+    transform: translateX(50%);
+  }
+}
+
 .event-detail h3, .event-detail .h3 {
   font-size: 24px;
   z-index: 1;
