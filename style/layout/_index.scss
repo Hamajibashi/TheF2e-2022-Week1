@@ -3,6 +3,10 @@ body {
     line-height: 1.2;
 }
 
+.font-noto-sans-tc {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
 .font-audiowide {
     font-family: 'Audiowide', cursive;
 }
@@ -27,12 +31,119 @@ header {
 }
 
 .banner {
-    .scroll{
-        display: none;
-        @include pc{
-            display: block;
+    .eye {
+        right: 0;
+        top: 45%;
+    }
+
+    .middle {
+        flex-grow: 1;
+
+        h2 {
+            font-size: 24px;
+
+            @include pad {
+                font-size: 48px;
+            }
+
+            @include pc {
+                font-size: 92px;
+            }
         }
     }
+
+    .star-arrow {
+        width: 31%;
+
+        .rotation {
+            animation: rotation 5s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .hexschool {
+        width: 69%;
+    }
+
+    .banner-bottom {
+        margin-bottom: 0;
+
+        @include pc {
+            margin-bottom: 56px;
+        }
+
+        li {
+            width: 33.3%;
+        }
+
+        .count-title {
+            @include pc {
+                font-size: 32px;
+            }
+        }
+
+        .count {
+            @include pc {
+                font-size: 52px;
+            }
+        }
+
+        .timer {
+            .timer-title {
+                @include pc {
+                    font-size: 32px;
+                }
+            }
+
+            p {
+                @include pc {
+                    font-size: 20px;
+                }
+            }
+
+            span {
+                @include pc {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+
+    .scroll-down {
+        display: none;
+
+        @include pc {
+            display: block;
+        }
+
+        img {
+            animation: floating 3s infinite linear;
+        }
+
+        @keyframes floating {
+            25% {
+                transform: translateY(-10px);
+            }
+
+            50%, 100% {
+                transform: translateY(0px);
+            }
+
+            75% {
+                transform: translateY(10px);
+            }
+        }
+    }
+
     // .circle {
     //     max-width: 390px;
     // }
@@ -168,24 +279,30 @@ header {
 }
 
 // 三大主題
-.three-topics{
+.three-topics {
     overflow: hidden;
-    h3{
+
+    h3 {
         font-size: 24px;
-        @include pad{
+
+        @include pad {
             font-size: 48px;
         }
+
         @include hollow-font;
     }
-    .subtitle{
+
+    .subtitle {
         opacity: 0.3;
         font-size: 12px;
-        @include pad{
+
+        @include pad {
             font-size: 24px;
         }
     }
-    ul{
-        @include pad{
+
+    ul {
+        @include pad {
             transform: translateX(50%);
         }
     }
@@ -383,9 +500,10 @@ header {
     max-width: 100%;
     overflow: hidden;
     z-index: 1;
+
     .loop {
         position: absolute;
-        z-index:-1;
+        z-index: -1;
         top: 190px;
         display: inline-block;
         font-size: 32px;
@@ -393,26 +511,33 @@ header {
         white-space: nowrap;
         height: 100%;
         -webkit-text-stroke: 1px #fff;
-        span{
+
+        span {
             display: inline-block;
         }
-        img{
+
+        img {
             width: 19px;
-            @include pc{
+
+            @include pc {
                 width: 49px;
             }
         }
-        @include pc{
+
+        @include pc {
             font-size: 80px;
             top: 210px;
         }
-        li{
+
+        li {
             margin-bottom: 270px;
-            @include pc{
+
+            @include pc {
                 margin-bottom: 235px;
             }
         }
-      }
+    }
+
     .not-enough {
         font-size: 12px;
 
@@ -434,9 +559,11 @@ header {
             font-size: 48px;
         }
     }
-    h4{
+
+    h4 {
         font-size: 20px;
-        @include pc{
+
+        @include pc {
             font-size: 36px;
         }
     }
@@ -456,14 +583,18 @@ header {
             font-size: 20px;
         }
     }
-    .price-list{
+
+    .price-list {
         width: 335px;
-        @include pc{
+
+        @include pc {
             width: 1091px;
         }
-        li{
+
+        li {
             width: 239px;
-            @include pc{
+
+            @include pc {
                 width: calc(100%/3);
             }
         }
@@ -472,25 +603,33 @@ header {
     .price-card {
         border-top-left-radius: 100%;
         border-top-right-radius: 100%;
-        h5,h6{
+
+        h5,
+        h6 {
             font-size: 28px;
-            @include pc{
+
+            @include pc {
                 font-size: 46px;
             }
         }
-        h6{
+
+        h6 {
             letter-spacing: normal;
         }
-        span{
+
+        span {
             font-size: 16px;
-            @include pc{
+
+            @include pc {
                 font-size: 26px;
             }
         }
     }
-    .bg-success{
+
+    .bg-success {
         font-size: 20px;
-        @include pc{
+
+        @include pc {
             font-size: 32px;
         }
     }
@@ -622,33 +761,41 @@ header {
 }
 
 // 常見問題
-.faqs{
-    h3{
+.faqs {
+    h3 {
         font-size: 24px;
-        @include pc{
+
+        @include pc {
             font-size: 48px;
         }
+
         @include hollow-font;
     }
-    .faq-area{
+
+    .faq-area {
         z-index: 1;
     }
-    .faq-man{
+
+    .faq-man {
         display: none;
-        @include pc{
+
+        @include pc {
             display: block;
             z-index: -1;
             top: -25%;
         }
     }
-    .faq-pc{
+
+    .faq-pc {
         display: none;
-        @include pc{
+
+        @include pc {
             display: block;
         }
     }
-    .faq-rwd{
-        @include pc{
+
+    .faq-rwd {
+        @include pc {
             display: none;
         }
     }

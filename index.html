@@ -60,43 +60,64 @@
   </header>
   <main>
     <!-- banner -->
-    <section class="bannner bg-dark pt-7 pt-md-11 pt-xl-14">
+    <section class="banner bg-dark pt-7 pt-md-11 pt-xl-14">
       <div class="container">
-        <div class="text-center">
-          <img src="./images/banner.svg" alt="" class="img-fluid  mb-xl-21">
-          <img src="./images/scroll down.svg" alt="" class="scroll">
+        <div class="wrapper">
+          <div class="banner-top d-flex border border-white">
+            <img src="./images/KV-1.svg" alt="" class="img-fluid">
+            <div class="position-relative overflow-hidden border border-white">
+              <img src="./images/KV-2.svg" alt="" class="eye img-fluid position-absolute">
+              <img src="./images/KV-6.svg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="banner-middle d-flex justify-content-between border border-white">
+            <img src="./images/KV-7.svg" alt="" class="img-fluid">
+            <div class="middle text-center">
+              <h2 class="fw-bolder text-white border border-white py-xl-10 px-xl-13 mb-0">互動式網頁設計</h2>
+              <div class="d-flex">
+                <div class="star-arrow border border-white d-flex align-items-center justify-content-center">
+                  <img src="./images/KV-4.svg" alt="" class="rotation img-fluid">
+                  <img src="./images/KV-5.svg" alt="" class="img-fluid">
+                </div>
+                <h3 class="hexschool text-white bg-info border border-white py-xl-3 px-xl-9 mb-0">HexSchool</h3>
+              </div>
+            </div>
+            <img src="./images/KV-3.svg" alt="" class="img-fluid">
+          </div>
+          <div class="banner-bottom font-audiowide border border-white">
+            <ul class="list-unstyled bg-secondary d-flex mb-0">
+              <li class="border border-white d-flex align-items-center justify-content-center py-xl-7 px-xl-auto">
+                <p class="count-title text-white mb-0 me-xl-7">Total:</p>
+                <div class="count text-primary bg-dark px-xl-7">1088</div>
+              </li>
+              <li class="border border-white d-flex align-items-center justify-content-center py-xl-7 px-xl-auto">
+                <p class="count-title text-white mb-0 me-xl-7">Personal:</p>
+                <div class="count text-primary bg-dark px-xl-7">376</div>
+              </li>
+              <li class="border border-white d-flex align-items-center justify-content-center py-xl-7 px-xl-auto">
+                <p class="count-title text-white mb-0 me-xl-7">Team:</p>
+                <div class="count text-primary bg-dark px-xl-7">122</div>
+              </li>
+            </ul>
+            <div class="timer text-white bg-secondary border border-white d-flex align-items-center justify-content-center py-xl-7">
+              <p class="timer-title font-noto-sans-tc mb-0 me-xl-7">報名倒數</p>
+              <span class="bg-dark px-xl-11 me-xl-4">6</span>
+              <p class="mb-0 font-noto-sans-tc mb-0 me-xl-7">天</p>
+              <span class="bg-dark px-xl-11 me-xl-4">8</span>
+              <p class="mb-0 font-noto-sans-tc mb-0 me-xl-7">小<br>時</p>
+              <span class="bg-dark px-xl-11 me-xl-4">0</span>
+              <p class="mb-0 font-noto-sans-tc mb-0 me-xl-7">分<br>鐘</p>
+              <span class="bg-dark px-xl-11 me-xl-4">56</span>
+              <p class="mb-0 font-noto-sans-tc">秒</p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-down text-center ">
+          <p class="text-white mb-6">Scroll down</p>
+          <img src="./images/scroll down.svg" alt="" class="img-fluid">
         </div>
       </div>
     </section>
-    <!-- <section class="banner bg-dark pt-7 pt-md-11 pt-xl-14">
-      <div class="container">
-        <div class="d-flex position-relative top">
-          <img src="./images/KV-1.svg" alt="" class="circle">
-          <img src="./images/KV-6.svg" alt="" class=" theF2E">
-          <img src="./images/KV-2.svg" alt="" class="position-absolute eye">
-        </div>
-        <div class="d-flex center">
-          <img src="./images/KV-7.svg" alt="">
-          <div class="d-flex flex-column justify-content-between">
-            <ul class="list-unstyled d-flex text-white">
-              <li class="fw-bolder">互動式</li>
-              <li>|</li>
-              <li class="fw-bolder">網頁設計</li>
-            </ul>
-            <div class="d-flex justify-content-between">
-              <div class="d-flex star">
-                <img src="./images/KV-4.svg" alt="">
-                <img src="./images/KV-5.svg" alt="">
-              </div>
-              <div class="d-flex justify-content-center hexschool">
-                <h3 class="text-white mb-0">HexSchool</h3>
-              </div>
-            </div>
-          </div>
-          <img src="./images/KV-3.svg" alt="">
-        </div>
-      </div>
-    </section> -->
     <!-- 你是否也有以下困擾？ -->
     <section class="problems bg-dark py-13 py-xl-15">
       <div class="container">
@@ -141,7 +162,8 @@
     <!-- together we can go far -->
     <section class="together bg-primary py-13 py-xl-15">
       <div class="container d-flex flex-column align-items-center position-relative">
-        <h3 class="font-archivo-black text-white text-center mb-9 mb-xl-13" data-aos="zoom-in-up" duration="800">TOGETHER<br>WE CAN<br>GO FAR</h3>
+        <h3 class="font-archivo-black text-white text-center mb-9 mb-xl-13" data-aos="zoom-in-up" duration="800">
+          TOGETHER<br>WE CAN<br>GO FAR</h3>
         <ul class="list-unstyled fw-bold d-flex">
           <li data-aos="fade-right" duration="3000">UI 設計師</li>
           <li class="mx-10" data-aos="fade-up" duration="3000">X</li>
@@ -374,17 +396,21 @@
       <ul class="loop">
         <li>
           <span> 來比賽 <img src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 來比賽 <img
-              src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 來比賽 <img src="/images/star_run.svg"> THE
+              src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 來比賽 <img src="/images/star_run.svg">
+            THE
             F2E <img src="/images/star_run.svg"> </span><span> 來比賽 <img src="/images/star_run.svg"> THE F2E <img
-              src="/images/star_run.svg"> 來比賽 <img src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 來比賽
+              src="/images/star_run.svg"> 來比賽 <img src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg">
+            來比賽
             <img src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> </span>
         </li>
         <li>
           <span> 拿獎項 <img src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 拿獎項 <img
-              src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 拿獎項 <img src="/images/star_run.svg"> THE
+              src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 拿獎項 <img src="/images/star_run.svg">
+            THE
             F2E <img src="/images/star_run.svg"></span>
           <span> 拿獎項 <img src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 拿獎項 <img
-              src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 拿獎項 <img src="/images/star_run.svg"> THE
+              src="/images/star_run.svg"> THE F2E <img src="/images/star_run.svg"> 拿獎項 <img src="/images/star_run.svg">
+            THE
             F2E <img src="/images/star_run.svg"></span>
         </li>
       </ul>
@@ -413,7 +439,8 @@
               </div>
             </div>
           </div>
-          <div class="price-list d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" duration="800">
+          <div class="price-list d-flex flex-column align-items-center justify-content-center" data-aos="fade-up"
+            duration="800">
             <div class="card-top bg-dark py-7 px-auto mb-19 mb-xl-0 text-center w-100">
               <h4 class="text-primary fw-bolder mb-0">獎項</h4>
             </div>
@@ -482,7 +509,8 @@
         <div class="d-flex flex-column justify-content-center align-items-center">
           <h3 class="position-relative mb-13 mb-xl-17" data-aos="fade-up">各界大神接力分享</h3>
           <ul class="lesson-list list-unstyled d-flex flex-column">
-            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17" data-aos="fade-up">
+            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17"
+              data-aos="fade-up">
               <img src="./images/大神分享-李明.svg" alt="講師照片" class="img-fluid">
               <div class="event-detail d-flex flex-column">
                 <div class="bg-white p-7 d-flex flex-column justify-content-between">
@@ -505,7 +533,8 @@
                 </div>
               </div>
             </li>
-            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17" data-aos="fade-up">
+            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17"
+              data-aos="fade-up">
               <img src="./images/大神分享-Leo.svg" alt="講師照片" class="img-fluid">
               <div class="event-detail d-flex flex-column">
                 <div class="bg-white p-7 d-flex flex-column justify-content-between">
@@ -528,7 +557,8 @@
                 </div>
               </div>
             </li>
-            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17" data-aos="fade-up">
+            <li class="d-flex flex-column flex-xl-row align-items-center justify-content-center mb-13 mb-xl-17"
+              data-aos="fade-up">
               <img src="./images/大神分享-邱繼緯.svg" alt="講師照片" class="img-fluid">
               <div class="event-detail d-flex flex-column">
                 <div class="bg-white p-7 d-flex flex-column justify-content-between">
@@ -584,7 +614,8 @@
         <div class="d-flex flex-column justify-content-center align-items-center">
           <h3 class="position-relative mb-13 mb-xl-17" data-aos="fade-up">常見問題</h3>
           <div class="faq-area position-relative">
-            <img src="./images/常見問題-image.svg" alt="" class="faq-man position-absolute" data-aos="fade-up" duration="600">
+            <img src="./images/常見問題-image.svg" alt="" class="faq-man position-absolute" data-aos="fade-up"
+              duration="600">
             <img src="./images/faqs_pc.svg" alt="" class="faq-pc img-fluid" data-aos="fade-up">
             <img src="./images/faqs_rwd.svg" alt="" class="faq-rwd img-fluid" data-aos="fade-up">
           </div>

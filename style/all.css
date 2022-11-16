@@ -16724,6 +16724,10 @@ body {
   line-height: 1.2;
 }
 
+.font-noto-sans-tc {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 .font-audiowide {
   font-family: "Audiowide", cursive;
 }
@@ -16742,12 +16746,120 @@ header .header-btn:hover {
   background-color: #456EFF;
 }
 
-.banner .scroll {
+.banner .eye {
+  right: 0;
+  top: 45%;
+}
+.banner .middle {
+  flex-grow: 1;
+}
+.banner .middle h2, .banner .middle .h2 {
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .banner .middle h2, .banner .middle .h2 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner .middle h2, .banner .middle .h2 {
+    font-size: 92px;
+  }
+}
+.banner .star-arrow {
+  width: 31%;
+}
+.banner .star-arrow .rotation {
+  -webkit-animation: rotation 5s infinite linear;
+          animation: rotation 5s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.banner .hexschool {
+  width: 69%;
+}
+.banner .banner-bottom {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .banner .banner-bottom {
+    margin-bottom: 56px;
+  }
+}
+.banner .banner-bottom li {
+  width: 33.3%;
+}
+@media (min-width: 1200px) {
+  .banner .banner-bottom .count-title {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner .banner-bottom .count {
+    font-size: 52px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner .banner-bottom .timer .timer-title {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner .banner-bottom .timer p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner .banner-bottom .timer span {
+    font-size: 36px;
+  }
+}
+.banner .scroll-down {
   display: none;
 }
 @media (min-width: 1200px) {
-  .banner .scroll {
+  .banner .scroll-down {
     display: block;
+  }
+}
+.banner .scroll-down img {
+  -webkit-animation: floating 3s infinite linear;
+          animation: floating 3s infinite linear;
+}
+@-webkit-keyframes floating {
+  25% {
+    transform: translateY(-10px);
+  }
+  50%, 100% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+@keyframes floating {
+  25% {
+    transform: translateY(-10px);
+  }
+  50%, 100% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
   }
 }
 
@@ -17199,11 +17311,15 @@ header .header-btn:hover {
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
 }
-.race-and-price .price-card h5, .race-and-price .price-card .h5, .race-and-price .price-card h6, .race-and-price .price-card .h6 {
+.race-and-price .price-card h5, .race-and-price .price-card .h5,
+.race-and-price .price-card h6,
+.race-and-price .price-card .h6 {
   font-size: 28px;
 }
 @media (min-width: 1200px) {
-  .race-and-price .price-card h5, .race-and-price .price-card .h5, .race-and-price .price-card h6, .race-and-price .price-card .h6 {
+  .race-and-price .price-card h5, .race-and-price .price-card .h5,
+.race-and-price .price-card h6,
+.race-and-price .price-card .h6 {
     font-size: 46px;
   }
 }
