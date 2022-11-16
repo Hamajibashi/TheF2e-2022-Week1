@@ -16791,6 +16791,17 @@ header .header-btn:hover {
 }
 .banner .hexschool {
   width: 69%;
+  font-size: 10px;
+}
+@media (min-width: 768px) {
+  .banner .hexschool {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner .hexschool {
+    font-size: 38px;
+  }
 }
 .banner .banner-bottom {
   margin-bottom: 0;
